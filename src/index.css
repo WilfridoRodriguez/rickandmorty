@@ -1,0 +1,165 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1pc;
+}
+
+.ContainerCard{
+  padding: 2pc;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1pc;
+  background-color: #272b33;
+}
+
+.Card{
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  padding: 0 0.6pc 0 0;
+  align-items: center;
+  gap: 0.6pc;
+  background-color: #3c3e44;
+  box-shadow: 0px 4px 4px 0px black;
+}
+
+.Card img {
+  width: 10pc;
+  border-radius: 8px 0 0 8px;
+}
+
+.ContainerCharacter{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 5pc 0 2pc 0pc  
+}
+
+.ContainerImage img{ /*Centrado*/
+  border-radius: 50%;
+  width: 50%;
+  margin: auto;
+  display: block;
+}
+
+.ContainerContent{ /*Centrado*/
+  color: white;
+  text-align: center;
+  margin: auto;
+  display: block;
+}
+
+.ContainerContent h1{
+  font-size: 53px;
+}
+
+.ContainerContent p{
+  font-size: 25px;
+}
+
+.BotonRegresar{
+  text-align: center;
+  padding: 3pc;
+}
+
+.BotonRegresar button{
+  width: 13pc;
+  height: 2.5pc;
+}
+
+.Spiner{ /*centrado*/
+  margin: auto;
+  padding: 14.18pc;
+  display: block;
+  width: 0%;
+}
+
+.Spiner h1{
+  color: white;
+}
+
+
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+  margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
